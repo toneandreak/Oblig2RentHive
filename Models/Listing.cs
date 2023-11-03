@@ -15,15 +15,16 @@ namespace Oblig2RentHive.Models
 
 
         //Title for the property.
-        [Required(ErrorMessage = "Required to fill out Title for the listing")]
+        [Required(ErrorMessage = "Required to fill out Title for the listing.")]
         public string? Title { get; set; }
 
         //Description for the property. 
         public string? Description { get; set; }
 
         //Price per night.
-        [Range(0, double.MaxValue)]
-        [Required(ErrorMessage = "Required to fill out the price of the listing")]
+        [Range(0, (double)decimal.MaxValue, ErrorMessage = "Please enter valid price.")]
+
+        [Required(ErrorMessage = "Required to fill out the price of the listing.")]
         public double PricePerNight { get; set; }
 
 
@@ -38,14 +39,16 @@ namespace Oblig2RentHive.Models
         
         //More information about the apartment
 
-        [Required(ErrorMessage = "Required to fill out how many bedrooms")]
+
+        [Required(ErrorMessage = "Required to fill out how many bedrooms.")]
         public int Bedroom { get; set; }
 
-        //Bathrooms
-        [Required(ErrorMessage = "Required to fill out how many bathrooms")]
+
+        [Required(ErrorMessage = "Required to fill out how many bathrooms.")]
         public int Bathroom { get; set; }
 
-        [Required(ErrorMessage = "Required to fill out how many beds")]
+
+        [Required(ErrorMessage = "Required to fill out how many beds.")]
         public int Beds { get; set; }
 
 

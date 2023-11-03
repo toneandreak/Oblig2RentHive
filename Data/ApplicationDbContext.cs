@@ -11,7 +11,21 @@ namespace Oblig2RentHive.Data
         public ApplicationDbContext(DbContextOptions options, IOptions<OperationalStoreOptions> operationalStoreOptions)
             : base(options, operationalStoreOptions)
         {
-
         }
+
+
+        //Controllers here: 
+
+        public DbSet<Listing> Listing { get; set; }
+        public DbSet<Booking> Bookings{ get; set; }   
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+    
+
+
+
+
+
+
+
     }
 }
