@@ -14,11 +14,13 @@ namespace Oblig2RentHive.Data
         }
 
 
-        //Controllers here: 
+        //Models here: 
 
         public DbSet<Listing> Listing { get; set; }
         public DbSet<Booking> Bookings{ get; set; }   
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+
+      
     
 
 

@@ -1,5 +1,4 @@
-﻿using Duende.IdentityServer.Models;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
 
 namespace Oblig2RentHive.ViewModels
