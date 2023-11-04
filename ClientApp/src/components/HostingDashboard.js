@@ -67,10 +67,6 @@ function HostingDashboard() {
 
 
 
-
-
-
-
     return (
         <div>
             <Table data={listings} columns={AllListingColumns} tableTitle="Available Listings" />
